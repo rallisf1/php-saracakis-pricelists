@@ -1,0 +1,23 @@
+{
+    "name": "rallisf1/php-saracakis-pricelists",
+    "type": "library",
+    "version": "0.1",
+    "description": "Parse DOS Dealer Pricelists issued by Saracakis S.A.",
+    "keywords": ["saracakis", "honda", "mitsubishi", "parts"],
+    "homepage": "https://github.com/rallisf1/php-saracakis-pricelists",
+    "license": "MIT",
+    "authors": [{
+        "name": "John Rallis",
+        "email": "rallisf1@yahoo.gr",
+        "homepage": "https://rallisf1.info",
+        "role": "Developer"
+    }],
+    "require": {
+        "zbateson/mb-wrapper": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rallisf1\\PhpSaracakisPricelists\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "rallisf1/php-saracakis-pricelists-example",
+    "description": "This is an example of how to parse Saracakis Pricelists in PHP",
+    "repositories": [{
+        "type": "path",
+        "url": "../package/",
+        "options": {
+            "symlink": true
+        }
+    }],
+    "require": {
+        "rallisf1/php-saracakis-pricelists": "@dev"
+    }
+}
