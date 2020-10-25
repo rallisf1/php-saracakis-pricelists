@@ -14,6 +14,7 @@ composer require rallisf1/php-saracakis-pricelists
 Have the file uploaded where php can reach it and feed it to the class. You can also filter the results by product type (optional):
 
 | Filter Value | Description |
+| ------------ | ------------ |
 | 0 (default) | Nothing is filtered out |
 | 1 | Your results will only contain car parts |
 | 2 | Your results will only contain motorcycle parts |
@@ -21,11 +22,11 @@ Have the file uploaded where php can reach it and feed it to the class. You can 
 
 _Common parts "HOT" will be included all the time_
 
-It will thrown an exception if something goes wrong so catch it.
+It will throw an exception if something goes wrong so catch it.
 
 ```php
 try {
-    $data = new rallisf1\PhpSaracakisPricelists\Parser($full_file_path, $filtering);
+    $data = new rallisf1\PhpSaracakisPricelists\Parser($full_file_path, $filter);
 } catch (Exception $e) {
     echo 'Error: '. $e->getMessage();
 }
